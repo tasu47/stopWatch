@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #stopwatch {
+
+
+            display: block;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-color: rgb(225, 246, 246);
+            width: 360px;
+            height: 300px;
+            margin: auto;
+            border-radius: 8px;
+            box-shadow: 0px 0px 12px 0px #7dd8e4;
+
+
+
+
+        }
+
+        #display {
+            align-items: center;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            padding-top: 20%;
+            padding-bottom: 30px;
+            font-weight: 800;
+            font-size: 2rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+
+        }
+
+        button {
+
+            padding: 8px 20px;
+            border: none;
+            outline: none;
+            border-radius: 5px;
+            color: white;
+            font-weight: 800;
+        }
+
+        #start {
+            background-color: red;
+        }
+
+        #stopbtn {
+            background-color: rgb(16, 127, 94);
+        }
+
+        #reset {
+            background-color: rgb(33, 30, 241);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="stopwatch">
+        <div id="display">
+            <div id="hour">00</div>
+            <h2>:</h2>
+            <div id="min">00</div>
+            <h2>:</h2>
+            <div id="sec">00</div>
+            <h2>:</h2>
+            <div id="mili">00</div>
+
+
+        </div>
+        <div id="button">
+            <button id="start" onclick="startbtn()">start</button>
+            <button id="stopbtn" onclick="stop()">stop</button>
+            <button id="reset" onclick="reset()">reset</button>
+        </div>
+    </div>
+    <script src="./stop.js"></script>
+</body>
+
+</html>
